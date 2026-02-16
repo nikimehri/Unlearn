@@ -8,7 +8,7 @@ from torch.utils.data import DataLoader, TensorDataset
 
 root = kagglehub.dataset_download("asjad99/mimiciii")
 subdir = os.path.join(root, "mimic-iii-clinical-database-demo-1.4")
-lab_path = os.path.join(subdir, "LABVENTS.csv")
+lab_path = os.path.join(subdir, "LABEVENTS.csv")
 df = pd.read_csv(lab_path).head(50000)
 
 if "FLAG" in df.columns:
